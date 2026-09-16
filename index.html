@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Mariano Gonnet — Ortopedia y Traumatología · Cirugía de Columna</title>
+<meta name="description" content="Dr. Mariano Gonnet, especialista jerarquizado en Ortopedia y Traumatología, subespecialidad Cirugía de Columna. Jefe del Servicio de Ortopedia y Traumatología del Hospital Municipal Ramón Santamarina de Tandil. Atención en Sanatorio Tandil y AMEMT.">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" href="images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dr. Mariano Gonnet — Ortopedia y Traumatología · Cirugía de Columna">
+<meta property="og:description" content="Especialista jerarquizado en Ortopedia y Traumatología, subespecialidad Cirugía de Columna. Jefe del Servicio del Hospital Ramón Santamarina de Tandil.">
+<meta property="og:image" content="images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dr. Mariano Gonnet — Ortopedia y Traumatología · Cirugía de Columna">
+<meta name="twitter:description" content="Especialista jerarquizado en Ortopedia y Traumatología, subespecialidad Cirugía de Columna. Tandil, Argentina.">
+<meta name="twitter:image" content="images/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#182F59;
+    --navy-deep:#0F2040;
+    --red:#BF1E30;
+    --red-soft:#D6465A;
+    --paper:#FBFAF7;
+    --ink:#1C1F26;
+    --ink-soft:#5B6270;
+    --mist:#EEF0F3;
+    --line:rgba(24,47,89,0.14);
+    --line-strong:rgba(24,47,89,0.26);
+    --shadow-navy:rgba(24,47,89,0.16);
+    --display:'Plus Jakarta Sans',ui-sans-serif,system-ui,sans-serif;
+    --body:'IBM Plex Sans',ui-sans-serif,system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:80px;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:var(--display);color:var(--navy);margin:0;text-wrap:balance;line-height:1.25;}
+  h3{font-size:17px;font-weight:700;}
+  p{margin:0;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  :focus-visible{outline:2px solid var(--red);outline-offset:3px;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 32px;}
+
+  /* ===== NAV ===== */
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(251,250,247,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    padding-top:14px;padding-bottom:14px;
+  }
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;padding:9px 0;min-height:44px;box-sizing:border-box;}
+  .brand img{width:34px;height:34px;object-fit:contain;}
+  .brand-text{font-family:var(--display);font-weight:700;font-size:15px;color:var(--navy);line-height:1.15;}
+  .brand-text small{display:block;font-family:var(--body);font-weight:500;font-size:12px;color:var(--ink-soft);letter-spacing:.02em;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    font-family:var(--display);font-weight:600;font-size:14.5px;
+    padding:11px 22px;min-height:44px;box-sizing:border-box;border-radius:8px;text-decoration:none;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    border:1.5px solid transparent;
+    white-space:nowrap;
+  }
+  .btn-red{background:var(--red);color:#fff;}
+  .btn-red:hover{background:#a71829;transform:translateY(-1px);}
+  .btn-navy-outline{border-color:var(--line-strong);color:var(--navy);}
+  .btn-navy-outline:hover{border-color:var(--navy);background:var(--mist);}
+  .nav-cta{padding:9px 18px;font-size:13.5px;min-height:44px;}
+
+  /* ===== HERO ===== */
+  .hero{padding:76px 0 0;}
+  .hero-grid{
+    display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;
+  }
+  .kicker{
+    font-size:15px;color:var(--ink-soft);margin-bottom:18px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .kicker::before{content:'';width:26px;height:2px;background:var(--red);flex:none;}
+  h1.name{
+    font-size:clamp(40px,4.6vw,60px);
+    font-weight:800;
+    line-height:1.03;
+    letter-spacing:-0.01em;
+    margin-bottom:20px;
+  }
+  .lede-quote{
+    font-size:19px;
+    color:var(--navy);
+    font-style:italic;
+    font-weight:500;
+    max-width:38ch;
+    margin-bottom:28px;
+    line-height:1.5;
+  }
+  .credentials{
+    display:flex;flex-direction:column;gap:9px;margin-bottom:34px;
+  }
+  .credentials li{list-style:none;display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--ink-soft);}
+  .credentials li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--red);margin-top:7px;flex:none;}
+  .credentials strong{color:var(--ink);font-weight:600;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+
+  .hero-photo{position:relative;}
+  .hero-photo .frame{
+    position:relative;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 18px 34px -16px var(--shadow-navy);
+    aspect-ratio:4/4.6;
+  }
+  .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%;}
+  .hero-photo .tag{
+    position:absolute;left:20px;right:20px;bottom:20px;
+    background:rgba(15,32,64,0.72);
+    backdrop-filter:blur(6px);
+    color:#fff;
+    padding:14px 18px;border-radius:10px;
+    font-family:var(--display);font-weight:700;font-size:14px;
+    line-height:1.35;
+  }
+  .hero-photo .tag span{display:block;font-weight:500;font-size:11.5px;color:#dbe3f0;margin-top:2px;}
+
+  /* ===== DIVIDER (logo motif) ===== */
+  .divider{padding:56px 0;}
+  .divider svg{width:100%;height:auto;display:block;}
+
+  /* ===== SECTION shell ===== */
+  section.block{padding:20px 0 88px;}
+  .head{max-width:56ch;margin-bottom:44px;}
+  h2.h{font-size:clamp(28px,3vw,36px);font-weight:700;margin-bottom:14px;}
+  .head p{color:var(--ink-soft);font-size:16px;}
+
+  /* ===== ESPECIALIDADES ===== */
+  .esp-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);border-top:1px solid var(--line);border-left:1px solid var(--line);
+  }
+  .esp-card{background:var(--paper);padding:32px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .esp-card svg{width:30px;height:30px;stroke:var(--navy);margin-bottom:18px;}
+  .esp-card h3{margin-bottom:8px;}
+  .esp-card p{font-size:14px;color:var(--ink-soft);line-height:1.6;}
+  .esp-note{margin-top:26px;font-size:13.5px;color:var(--ink-soft);font-style:italic;max-width:64ch;}
+
+  /* ===== SOBRE ===== */
+  .sobre-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:start;}
+  .sobre-grid .lede{font-size:16.5px;color:var(--ink-soft);margin-bottom:18px;max-width:60ch;}
+  .sobre-grid .lede strong{color:var(--ink);font-weight:600;}
+  .sobre-photo{border-radius:14px;overflow:hidden;margin-bottom:20px;box-shadow:0 20px 44px -18px var(--shadow-navy);}
+  .sobre-photo img{width:100%;aspect-ratio:16/11;object-fit:cover;object-position:center 30%;}
+  .side-card{background:var(--navy);color:#fff;border-radius:14px;padding:30px 28px;}
+  .side-card h3{color:#fff;margin-bottom:16px;}
+  .side-card ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;}
+  .side-card li{font-size:14px;color:#cfd7e6;line-height:1.55;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,0.14);}
+  .side-card li:last-child{border-bottom:none;padding-bottom:0;}
+  .side-card li strong{display:block;color:#fff;font-weight:600;margin-bottom:3px;}
+  .obras-note{margin-top:18px;font-size:12.5px;color:var(--ink-soft);font-style:italic;line-height:1.5;}
+
+  /* ===== HITOS ===== */
+  .hitos-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;}
+  .hito{border-top:3px solid var(--red);padding-top:20px;}
+  .hito-photo{border-radius:12px;overflow:hidden;margin-bottom:18px;}
+  .hito-photo img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center 30%;}
+  .hito .date{font-size:13px;color:var(--red);font-weight:600;margin-bottom:10px;}
+  .hito h3{font-size:20px;font-weight:700;margin-bottom:12px;}
+  .hito p{font-size:14.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:14px;}
+  .hito a{font-size:13.5px;font-weight:600;color:var(--navy);text-decoration:underline;text-underline-offset:3px;}
+
+  /* ===== UBICACION ===== */
+  .ubic-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:stretch;}
+  .sede-list{display:flex;flex-direction:column;gap:22px;}
+  .sede{padding-bottom:20px;border-bottom:1px solid var(--line);}
+  .sede:last-child{border-bottom:none;padding-bottom:0;}
+  .sede h3{margin-bottom:5px;}
+  .sede p{font-size:14px;color:var(--ink-soft);}
+  .map-frame{border-radius:14px;overflow:hidden;border:1px solid var(--line-strong);min-height:320px;}
+  .map-frame iframe{width:100%;height:100%;min-height:320px;border:0;display:block;}
+
+  /* ===== CONTACTO / FORM ===== */
+  .contacto-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;}
+  .aviso-mini{
+    margin-top:20px;font-size:13px;color:var(--ink-soft);font-style:italic;
+    padding-left:14px;border-left:2px solid var(--line-strong);max-width:44ch;
+  }
+  form.turno{background:var(--mist);border-radius:16px;padding:34px;}
+  .field{margin-bottom:18px;}
+  .field label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:7px;}
+  .field input,.field select,.field textarea{
+    width:100%;padding:12px 14px;border-radius:9px;border:1.5px solid var(--line-strong);
+    background:#fff;font-family:var(--body);font-size:14.5px;color:var(--ink);
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--navy);}
+  .field textarea{resize:vertical;min-height:80px;}
+  form.turno .btn{width:100%;justify-content:center;padding:14px;font-size:15px;}
+
+  /* ===== AVISO MEDICO ===== */
+  .aviso-medico{
+    background:var(--navy-deep);color:#c9d3e6;padding:26px 0;text-align:center;font-size:12.5px;line-height:1.7;
+  }
+  .aviso-medico .wrap{max-width:820px;}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--navy);color:#fff;padding:40px 0;}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+  .foot-brand{display:flex;align-items:center;gap:12px;}
+  .foot-brand .foot-mark{width:30px;height:30px;object-fit:contain;flex:none;}
+  .foot-brand span{font-family:var(--display);font-weight:700;font-size:14px;}
+  footer .meta{font-size:12.5px;color:#a9b4cc;}
+
+  /* ===== WA FLOTANTE ===== */
+  .wa-float{
+    position:fixed;bottom:24px;right:24px;z-index:80;
+    display:flex;align-items:center;gap:10px;
+    background:var(--red);color:#fff;text-decoration:none;
+    padding:14px 20px 14px 15px;border-radius:50px;
+    font-family:var(--display);font-weight:600;font-size:13.5px;
+    box-shadow:0 10px 26px -8px rgba(191,30,48,0.55);
+    transition:transform .15s ease;
+  }
+  .wa-float:hover{transform:translateY(-2px);}
+  .wa-float svg{width:20px;height:20px;flex:none;}
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:900px){
+    .hero-grid,.sobre-grid,.ubic-grid,.contacto-grid{grid-template-columns:1fr;}
+    .hero-photo{order:-1;max-width:340px;margin:0 auto;}
+    .esp-grid{grid-template-columns:1fr 1fr;}
+    .hitos-grid{grid-template-columns:1fr;}
+    .side-card{margin-top:8px;}
+  }
+  @media (max-width:640px){
+    .wrap{padding:0 20px;}
+    .hero{padding:56px 0 0;}
+    .esp-grid{grid-template-columns:1fr;}
+    section.block{padding:16px 0 64px;}
+    .divider{padding:40px 0;}
+    .wa-float span{display:none;}
+    .wa-float{padding:14px;border-radius:50%;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .btn,.wa-float{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="brand">
+      <img src="images/logo-mark.png" alt="">
+      <span class="brand-text">Dr. Gonnet Mariano<small>Ortopedia y Traumatología</small></span>
+    </a>
+    <a href="https://wa.me/5492494286821?text=Hola!%20Quiero%20solicitar%20un%20turno%20con%20el%20Dr.%20Gonnet." class="btn btn-red nav-cta" target="_blank">Pedir turno</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Ortopedia y Traumatología, Tandil</p>
+      <h1 class="name">Dr. Mariano<br>Gonnet</h1>
+      <p class="lede-quote">"La cirugía mínimamente invasiva no es el futuro, es el presente."</p>
+      <ul class="credentials">
+        <li><strong>Especialista jerarquizado</strong> en Ortopedia y Traumatología — M.P. 116279</li>
+        <li><strong>Jefe del Servicio</strong> de Ortopedia y Traumatología, Hospital Ramón Santamarina</li>
+        <li><strong>Miembro adherente</strong> de la Sociedad Argentina de Patología de la Columna Vertebral</li>
+      </ul>
+      <div class="hero-actions">
+        <a href="https://wa.me/5492494286821?text=Hola!%20Quiero%20solicitar%20un%20turno%20con%20el%20Dr.%20Gonnet." class="btn btn-red" target="_blank">Pedir turno</a>
+        <a href="#especialidades" class="btn btn-navy-outline">Ver especialidades</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame"><img src="images/doctor-retrato.jpg" alt="Dr. Mariano Gonnet"></div>
+      <div class="tag">Cirugía de Columna<span>Endoscópica · Mínimamente invasiva</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- DIVIDER 1 -->
+<div class="divider">
+  <div class="wrap">
+    <svg viewBox="0 0 1200 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="60" cy="30" r="3" fill="#BF1E30"/>
+      <circle cx="180" cy="24" r="5" fill="#BF1E30"/>
+      <circle cx="300" cy="34" r="7" fill="#BF1E30"/>
+      <circle cx="420" cy="20" r="9" fill="#BF1E30"/>
+      <circle cx="545" cy="30" r="10" fill="#BF1E30"/>
+      <circle cx="670" cy="20" r="10" fill="#BF1E30"/>
+      <circle cx="790" cy="34" r="9" fill="#BF1E30"/>
+      <circle cx="905" cy="20" r="7" fill="#BF1E30"/>
+      <circle cx="1020" cy="30" r="5" fill="#BF1E30"/>
+      <circle cx="1140" cy="24" r="3" fill="#BF1E30"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ESPECIALIDADES -->
+<section class="block" id="especialidades">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="h">Patologías y tratamientos</h2>
+      <p>Evaluación y tratamiento de la columna vertebral, desde bloqueos para el dolor hasta cirugía endoscópica, según lo que indique cada caso.</p>
+    </div>
+    <div class="esp-grid">
+      <div class="esp-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><ellipse cx="12" cy="12" rx="8" ry="3"/><ellipse cx="12" cy="18" rx="8" ry="3"/></svg>
+        <h3>Hernia de disco</h3>
+        <p>Evaluación y tratamiento de hernias cervicales, dorsales y lumbares, conservador o quirúrgico según cada caso.</p>
+      </div>
+      <div class="esp-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2-7 4 14 3-10 2 3h5"/></svg>
+        <h3>Dolor lumbar</h3>
+        <p>Bloqueos para el manejo del dolor vertebral y abordajes personalizados para la lumbalgia.</p>
+      </div>
+      <div class="esp-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>
+        <h3>Dolor cervical y dorsal</h3>
+        <p>Diagnóstico y tratamiento de patología cervical y dorsal de columna.</p>
+      </div>
+      <div class="esp-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l4-4 3 3 2-2 3 3 4-4"/><path d="M4 12l4 4 3-3 2 2 3-3 4 4"/></svg>
+        <h3>Fracturas vertebrales</h3>
+        <p>Tratamiento convencional o percutáneo de fracturas vertebrales, según evaluación de cada caso.</p>
+      </div>
+      <div class="esp-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <h3>Cirugía mínimamente invasiva</h3>
+        <p>Técnicas percutáneas de menor agresión quirúrgica, orientadas a una recuperación más ágil.</p>
+      </div>
+      <div class="esp-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <h3>Cirugía endoscópica de columna</h3>
+        <p>Para pacientes seleccionados, según evaluación individual — incorporada en Tandil en 2025.</p>
+      </div>
+    </div>
+    <p class="esp-note">La indicación de cada procedimiento depende de la patología, los estudios y la evaluación individual del paciente. No todas las patologías de columna requieren cirugía.</p>
+  </div>
+</section>
+
+<!-- SOBRE EL DOCTOR -->
+<section class="block" id="sobre">
+  <div class="wrap sobre-grid">
+    <div>
+      <div class="head">
+        <h2 class="h">Sobre el doctor</h2>
+      </div>
+      <p class="lede"><strong>El Dr. Mariano Gonnet</strong> es médico especialista jerarquizado en Ortopedia y Traumatología, con dedicación al diagnóstico y tratamiento de patologías de la columna vertebral. Es jefe del Servicio de Ortopedia y Traumatología del Hospital Municipal Ramón Santamarina de Tandil y desarrolla actividad privada en el Sanatorio Tandil.</p>
+      <p class="lede">Es miembro adherente de la Sociedad Argentina de Patología de la Columna Vertebral, dentro del área de columna del adulto. Su práctica incluye la evaluación de enfermedades cervicales, dorsales y lumbares, así como procedimientos convencionales, mínimamente invasivos, percutáneos y endoscópicos cuando están indicados.</p>
+      <p class="obras-note">La cobertura de obras sociales y planes varía según la sede y el convenio vigente — consulte al solicitar el turno.</p>
+    </div>
+    <div>
+      <div class="sobre-photo"><img src="images/doctor-consultorio.jpg" alt="Dr. Mariano Gonnet en su consultorio"></div>
+    <div class="side-card">
+      <h3>Trayectoria</h3>
+      <ul>
+        <li><strong>Desde 2019</strong>Práctica clínica en Ortopedia y Traumatología en Tandil.</li>
+        <li><strong>Agosto 2025</strong>Encabeza la primera cirugía endoscópica de columna en Tandil, Hospital Ramón Santamarina.</li>
+        <li><strong>Marzo 2026</strong>Organiza las Primeras Jornadas Tandilenses de Columna en la Atención Primaria.</li>
+        <li><strong>Junio 2026</strong>Participa del 13º Curso Europeo de Cirugía Mínimamente Invasiva de Columna, Madrid.</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER 2 -->
+<div class="divider">
+  <div class="wrap">
+    <svg viewBox="0 0 1200 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="60" cy="24" r="3" fill="#182F59"/>
+      <circle cx="180" cy="30" r="5" fill="#182F59"/>
+      <circle cx="300" cy="20" r="7" fill="#182F59"/>
+      <circle cx="420" cy="34" r="9" fill="#182F59"/>
+      <circle cx="545" cy="20" r="10" fill="#182F59"/>
+      <circle cx="670" cy="30" r="10" fill="#182F59"/>
+      <circle cx="790" cy="20" r="9" fill="#182F59"/>
+      <circle cx="905" cy="34" r="7" fill="#182F59"/>
+      <circle cx="1020" cy="20" r="5" fill="#182F59"/>
+      <circle cx="1140" cy="30" r="3" fill="#182F59"/>
+    </svg>
+  </div>
+</div>
+
+<!-- HITOS (reemplaza testimonios) -->
+<section class="block" id="hitos">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="h">Hitos y reconocimiento académico</h2>
+      <p>En vez de reseñas, esto es lo que otros médicos e instituciones dicen con hechos.</p>
+    </div>
+    <div class="hitos-grid">
+      <div class="hito">
+        <div class="hito-photo"><img src="images/doctor-quirofano.jpg" alt="Dr. Gonnet en quirófano junto a su equipo"></div>
+        <p class="date">Agosto 2025</p>
+        <h3>Primera cirugía endoscópica de columna en Tandil</h3>
+        <p>El Dr. Gonnet encabezó el equipo que realizó, el 21 de agosto de 2025, la primera cirugía endoscópica de columna lumbar informada en el Hospital Municipal Ramón Santamarina de Tandil, tras más de un año de formación intensiva en el exterior. La noticia fue difundida por la prensa local en septiembre de 2025.</p>
+        <a href="https://www.eldiariodetandil.com/2025/09/28/se-realizo-la-primera-cirugia-endoscopica-de-columna-en-el-hospital-santamarina" target="_blank">Leer nota — El Diario de Tandil</a>
+      </div>
+      <div class="hito">
+        <p class="date">Marzo 2026</p>
+        <h3>Primeras Jornadas Tandilenses de Columna</h3>
+        <p>Organizó el encuentro académico sobre columna en la Atención Primaria que reunió a más de 80 profesionales de la salud de Tandil y la región, con aval del Colegio Médico Distrito VIII y declarado de interés municipal por el Municipio de Tandil. Auditorio Nexus Mulen, Tandil.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UBICACION -->
+<section class="block" id="ubicacion">
+  <div class="wrap ubic-grid">
+    <div>
+      <div class="head" style="margin-bottom:28px;">
+        <h2 class="h">Dónde atiende</h2>
+      </div>
+      <div class="sede-list">
+        <div class="sede">
+          <h3>Sanatorio Tandil</h3>
+          <p>Sarmiento 770, Tandil</p>
+        </div>
+        <div class="sede">
+          <h3>Hospital Municipal Ramón Santamarina</h3>
+          <p>Jefe del Servicio de Ortopedia y Traumatología — atención pública</p>
+        </div>
+        <div class="sede">
+          <h3>Consultorios AMEMT</h3>
+          <p>Turnos: <a href="https://wa.me/5492494632802" target="_blank" style="color:var(--navy);font-weight:600;">+54 9 249 463-2802</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="map-frame">
+      <iframe src="https://maps.google.com/maps?q=Sarmiento%20770%2C%20Tandil%2C%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — Sanatorio Tandil, Sarmiento 770"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO / TURNOS -->
+<section class="block" id="contacto">
+  <div class="wrap contacto-grid">
+    <div>
+      <div class="head" style="margin-bottom:20px;">
+        <h2 class="h">Solicitar turno</h2>
+        <p>Complete sus datos y el mensaje se arma automáticamente para enviarlo por WhatsApp — no se guarda ni se envía a ningún otro lado.</p>
+      </div>
+      <p class="aviso-mini">La cobertura y las autorizaciones dependen de cada obra social y plan. Consulte antes de solicitar el turno.</p>
+    </div>
+    <form class="turno" id="form-turno">
+      <div class="field">
+        <label for="f-nombre">Nombre</label>
+        <input type="text" id="f-nombre" placeholder="Su nombre" required>
+      </div>
+      <div class="field">
+        <label for="f-sede">Sede</label>
+        <select id="f-sede">
+          <option value="Sanatorio Tandil">Sanatorio Tandil</option>
+          <option value="Consultorios AMEMT">Consultorios AMEMT</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-motivo">Motivo (opcional)</label>
+        <textarea id="f-motivo" placeholder="Ej: dolor lumbar, control, segunda opinión..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-red">Enviar por WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<div class="aviso-medico">
+  <div class="wrap">
+    La información de este sitio es educativa y no reemplaza la consulta, el diagnóstico ni las indicaciones de un profesional de la salud. La conveniencia de cada tratamiento depende de una evaluación médica individual. Si presenta una emergencia médica, comuníquese con el servicio de emergencias de su localidad — este sitio no atiende urgencias.
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand">
+      <img src="images/logo-icon-white.png" alt="" class="foot-mark">
+      <span>Dr. Gonnet Mariano — Cirugía de Columna</span>
+    </div>
+    <p class="meta">Tandil, Argentina · © 2026</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/5492494286821?text=Hola!%20Vi%20la%20p%C3%A1gina%20del%20Dr.%20Gonnet%20y%20quiero%20solicitar%20un%20turno." class="wa-float" target="_blank" aria-label="Pedir turno por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>Pedir turno</span>
+</a>
+
+<script>
+  document.getElementById('form-turno').addEventListener('submit', function(e){
+    e.preventDefault();
+    var nombre = document.getElementById('f-nombre').value.trim();
+    var sede = document.getElementById('f-sede').value;
+    var motivo = document.getElementById('f-motivo').value.trim();
+    var numero = sede === 'Consultorios AMEMT' ? '5492494632802' : '5492494286821';
+    var msg = 'Hola! Quiero solicitar un turno con el Dr. Gonnet.\nNombre: ' + nombre + '\nSede: ' + sede;
+    if(motivo){ msg += '\nMotivo: ' + motivo; }
+    window.open('https://wa.me/' + numero + '?text=' + encodeURIComponent(msg), '_blank');
+  });
+</script>
+
+</body>
+</html>
