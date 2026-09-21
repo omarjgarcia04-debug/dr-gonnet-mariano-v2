@@ -91,6 +91,19 @@
   .btn-navy-outline:hover{border-color:var(--navy);background:var(--mist);}
   .nav-cta{padding:9px 18px;font-size:13.5px;min-height:44px;}
 
+  /* ===== BADGES ===== */
+  .badges{background:var(--paper);border-bottom:1px solid var(--line);}
+  .badges-row{display:flex;gap:10px;flex-wrap:wrap;padding:14px 32px;}
+  .badge{
+    display:inline-flex;align-items:center;
+    font-family:var(--display);font-weight:600;font-size:12.5px;
+    color:var(--navy);letter-spacing:.01em;
+    padding:7px 16px;border-radius:999px;
+    border:1.5px solid var(--line-strong);
+    background:var(--mist);
+    white-space:nowrap;
+  }
+
   /* ===== HERO ===== */
   .hero{padding:76px 0 0;}
   .hero-grid{
@@ -254,6 +267,7 @@
   }
   @media (max-width:640px){
     .wrap{padding:0 20px;}
+    .badges-row{padding:12px 20px;}
     .hero{padding:56px 0 0;}
     .esp-grid{grid-template-columns:1fr;}
     section.block{padding:16px 0 64px;}
@@ -279,6 +293,13 @@
     <a href="https://wa.me/5492494286821?text=Hola!%20Quiero%20solicitar%20un%20turno%20con%20el%20Dr.%20Gonnet." class="btn btn-red nav-cta" target="_blank">Pedir turno</a>
   </div>
 </nav>
+
+<div class="badges">
+  <div class="wrap badges-row">
+    <span class="badge">Especialista Jerarquizado</span>
+    <span class="badge">Columna</span>
+  </div>
+</div>
 
 <!-- HERO -->
 <header class="hero">
