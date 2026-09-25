@@ -175,6 +175,7 @@
   }
   .esp-card{background:var(--paper);padding:32px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
   .esp-card svg{width:30px;height:30px;stroke:var(--navy);margin-bottom:18px;}
+  .esp-photo{width:100%;aspect-ratio:16/11;object-fit:cover;border-radius:10px;margin-bottom:16px;}
   .esp-card h3{margin-bottom:8px;}
   .esp-card p{font-size:14px;color:var(--ink-soft);line-height:1.6;}
   .esp-note{margin-top:26px;font-size:13.5px;color:var(--ink-soft);font-style:italic;max-width:64ch;}
@@ -243,6 +244,10 @@
   .foot-brand .foot-mark{width:30px;height:30px;object-fit:contain;flex:none;}
   .foot-brand span{font-family:var(--display);font-weight:700;font-size:14px;}
   footer .meta{font-size:12.5px;color:#a9b4cc;}
+  footer .foot-right{display:flex;align-items:center;gap:18px;}
+  .foot-social{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.28);color:#fff;transition:border-color .15s ease,background .15s ease;flex:none;}
+  .foot-social:hover{border-color:#fff;background:rgba(255,255,255,0.08);}
+  .foot-social svg{width:17px;height:17px;}
 
   /* ===== WA FLOTANTE ===== */
   .wa-float{
@@ -352,12 +357,12 @@
     </div>
     <div class="esp-grid">
       <div class="esp-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><ellipse cx="12" cy="12" rx="8" ry="3"/><ellipse cx="12" cy="18" rx="8" ry="3"/></svg>
+        <img class="esp-photo" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/cirugia-percutanea-rx1.jpg" alt="Control radioscópico de fijación percutánea de columna">
         <h3>Hernia de disco</h3>
         <p>Evaluación y tratamiento de hernias cervicales, dorsales y lumbares, conservador o quirúrgico según cada caso.</p>
       </div>
       <div class="esp-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2-7 4 14 3-10 2 3h5"/></svg>
+        <img class="esp-photo" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/cirugia-percutanea-rx2.jpg" alt="Control radioscópico de tornillos percutáneos de columna">
         <h3>Dolor lumbar</h3>
         <p>Bloqueos para el manejo del dolor vertebral y abordajes personalizados para la lumbalgia.</p>
       </div>
@@ -473,6 +478,12 @@
         <div class="sede">
           <h3>Clínica Modelo Tandil</h3>
           <p>España 700, Tandil</p>
+          <p>Turnos: <a href="https://wa.me/5492494634580" target="_blank" style="color:var(--navy);font-weight:600;">+54 9 2494 63-4580</a></p>
+        </div>
+        <div class="sede">
+          <h3>Sanatorio Tandil</h3>
+          <p>Consultorios Integrados: <a href="https://wa.me/5492494286821" target="_blank" style="color:var(--navy);font-weight:600;">+54 9 2494 28-6821</a></p>
+          <p>Turnos: <a href="https://wa.me/5492494605994" target="_blank" style="color:var(--navy);font-weight:600;">+54 9 2494 60-5994</a></p>
         </div>
         <div class="sede">
           <h3>Consultorios AMEMT</h3>
@@ -505,6 +516,7 @@
         <label for="f-sede">Sede</label>
         <select id="f-sede">
           <option value="Clínica Modelo Tandil">Clínica Modelo Tandil</option>
+          <option value="Sanatorio Tandil">Sanatorio Tandil</option>
           <option value="Consultorios AMEMT">Consultorios AMEMT</option>
         </select>
       </div>
@@ -529,7 +541,12 @@
       <img src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/logo-icon-white.png" alt="" class="foot-mark">
       <span>Dr. Gonnet Mariano — Cirugía de Columna</span>
     </div>
-    <p class="meta">Tandil, Argentina · © 2026</p>
+    <div class="foot-right">
+      <p class="meta">Tandil, Argentina · © 2026</p>
+      <a href="https://www.instagram.com/drgonnet_mariano" target="_blank" rel="noopener" class="foot-social" aria-label="Instagram del Dr. Gonnet">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
   </div>
 </footer>
 
@@ -544,7 +561,12 @@
     var nombre = document.getElementById('f-nombre').value.trim();
     var sede = document.getElementById('f-sede').value;
     var motivo = document.getElementById('f-motivo').value.trim();
-    var numero = sede === 'Consultorios AMEMT' ? '5492494632802' : '5492494286821';
+    var numeros = {
+      'Clínica Modelo Tandil': '5492494634580',
+      'Sanatorio Tandil': '5492494286821',
+      'Consultorios AMEMT': '5492494632802'
+    };
+    var numero = numeros[sede] || '5492494286821';
     var msg = 'Hola! Quiero solicitar un turno con el Dr. Gonnet.\nNombre: ' + nombre + '\nSede: ' + sede;
     if(motivo){ msg += '\nMotivo: ' + motivo; }
     window.open('https://wa.me/' + numero + '?text=' + encodeURIComponent(msg), '_blank');
