@@ -145,8 +145,9 @@
     overflow:hidden;
     box-shadow:0 18px 34px -16px var(--shadow-navy);
     aspect-ratio:4/4.6;
+    background:var(--mist);
   }
-  .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%;}
+  .hero-photo img{width:100%;height:100%;object-fit:contain;}
   .hero-photo .tag{
     position:absolute;left:20px;right:20px;bottom:20px;
     background:rgba(15,32,64,0.72);
@@ -175,7 +176,7 @@
   }
   .esp-card{background:var(--paper);padding:32px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
   .esp-card svg{width:30px;height:30px;stroke:var(--navy);margin-bottom:18px;}
-  .esp-photo{width:100%;aspect-ratio:16/11;object-fit:cover;border-radius:10px;margin-bottom:16px;}
+  .esp-photo{width:100%;aspect-ratio:16/11;object-fit:contain;background:var(--mist);border-radius:10px;margin-bottom:16px;}
   .esp-card h3{margin-bottom:8px;}
   .esp-card p{font-size:14px;color:var(--ink-soft);line-height:1.6;}
   .esp-note{margin-top:26px;font-size:13.5px;color:var(--ink-soft);font-style:italic;max-width:64ch;}
@@ -184,8 +185,8 @@
   .sobre-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:start;}
   .sobre-grid .lede{font-size:16.5px;color:var(--ink-soft);margin-bottom:18px;max-width:60ch;}
   .sobre-grid .lede strong{color:var(--ink);font-weight:600;}
-  .sobre-photo{border-radius:14px;overflow:hidden;margin-bottom:20px;box-shadow:0 20px 44px -18px var(--shadow-navy);}
-  .sobre-photo img{width:100%;aspect-ratio:16/11;object-fit:cover;object-position:center 30%;}
+  .sobre-photo{border-radius:14px;overflow:hidden;margin-bottom:20px;box-shadow:0 20px 44px -18px var(--shadow-navy);background:var(--mist);}
+  .sobre-photo img{width:100%;aspect-ratio:16/11;object-fit:contain;}
   .side-card{background:var(--navy);color:#fff;border-radius:14px;padding:30px 28px;}
   .side-card h3{color:#fff;margin-bottom:16px;}
   .side-card ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;}
@@ -197,10 +198,11 @@
   /* ===== HITOS ===== */
   .hitos-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;}
   .hito{border-top:3px solid var(--red);padding-top:20px;}
-  .hito-photo{border-radius:12px;overflow:hidden;margin-bottom:18px;}
-  .hito-photo img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center 30%;}
+  .hito-photo{border-radius:12px;overflow:hidden;margin-bottom:18px;background:var(--mist);}
+  .hito-photo img{width:100%;aspect-ratio:16/10;object-fit:contain;}
   .hito-media-row{display:flex;gap:10px;margin-bottom:18px;}
-  .hito-media-row img,.hito-media-row video{width:50%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;background:#000;}
+  .hito-media-row img,.hito-media-row video{width:50%;aspect-ratio:3/4;object-fit:contain;border-radius:10px;background:var(--mist);}
+  .hito-media-row video{background:#000;}
   .hito .date{font-size:13px;color:var(--red);font-weight:600;margin-bottom:10px;}
   .hito h3{font-size:20px;font-weight:700;margin-bottom:12px;}
   .hito p{font-size:14.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:14px;}
@@ -359,7 +361,7 @@
     </div>
     <div class="esp-grid">
       <div class="esp-card">
-        <img class="esp-photo" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/hernia-disco-quirofano.jpg" alt="Dr. Gonnet operando una hernia de disco" style="object-position:center 15%;">
+        <img class="esp-photo" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/hernia-disco-quirofano.jpg" alt="Dr. Gonnet operando una hernia de disco">
         <h3>Hernia de disco</h3>
         <p>Evaluación y tratamiento de hernias cervicales, dorsales y lumbares, conservador o quirúrgico según cada caso.</p>
       </div>
@@ -379,12 +381,12 @@
         <p>Tratamiento convencional o percutáneo de fracturas vertebrales, según evaluación de cada caso.</p>
       </div>
       <div class="esp-card">
-        <img class="esp-photo" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/cirugia-min-invasiva-monitor.jpg" alt="Dr. Gonnet observando el monitor durante una cirugía mínimamente invasiva" style="object-position:center 25%;">
+        <img class="esp-photo" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/cirugia-min-invasiva-monitor.jpg" alt="Dr. Gonnet observando el monitor durante una cirugía mínimamente invasiva">
         <h3>Cirugía mínimamente invasiva</h3>
         <p>Técnicas percutáneas de menor agresión quirúrgica, orientadas a una recuperación más ágil.</p>
       </div>
       <div class="esp-card">
-        <img class="esp-photo" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/cirugia-endoscopica-instrumento.jpg" alt="Dr. Gonnet con instrumental de cirugía endoscópica de columna" style="object-position:center 15%;">
+        <img class="esp-photo" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/cirugia-endoscopica-instrumento.jpg" alt="Dr. Gonnet con instrumental de cirugía endoscópica de columna">
         <h3>Cirugía endoscópica de columna</h3>
         <p>Para pacientes seleccionados, según evaluación individual — incorporada en Tandil en 2025.</p>
       </div>
