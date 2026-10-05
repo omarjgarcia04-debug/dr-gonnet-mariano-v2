@@ -93,7 +93,18 @@
 
   /* ===== BADGES ===== */
   .badges{background:var(--paper);border-bottom:1px solid var(--line);}
-  .badges-row{display:flex;gap:10px;flex-wrap:wrap;padding:14px 32px;}
+  .badges-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:14px 32px;}
+  .badge-social{
+    margin-left:auto;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    min-width:40px;height:40px;padding:0 14px;border-radius:999px;
+    border:1.5px solid var(--line-strong);background:var(--mist);color:var(--navy);
+    font-family:var(--display);font-weight:600;font-size:12.5px;text-decoration:none;
+    transition:border-color .15s ease,background .15s ease;
+  }
+  .badge-social{position:relative;}
+  .badge-social::after{content:'';position:absolute;inset:-4px;}
+  .badge-social:hover{border-color:var(--navy);background:#fff;}
+  .badge-social svg{width:18px;height:18px;flex:none;}
   .badge{
     display:inline-flex;align-items:center;
     font-family:var(--display);font-weight:600;font-size:12.5px;
@@ -292,6 +303,10 @@
   @media (max-width:640px){
     .wrap{padding:0 20px;}
     .badges-row{padding:12px 20px;}
+    .badges-row{gap:8px;}
+    .badge{padding:7px 12px;font-size:12px;}
+    .badge-social{width:36px;min-width:36px;height:36px;padding:0;}
+    .badge-social span{display:none;}
     .hero{padding:56px 0 0;}
     .esp-grid{grid-template-columns:1fr;}
     section.block{padding:16px 0 64px;}
@@ -321,6 +336,10 @@
 <div class="badges">
   <div class="wrap badges-row">
     <span class="badge">Especialista Jerarquizado · Cirugía de Columna</span>
+    <a href="https://www.instagram.com/drgonnet_mariano" target="_blank" rel="noopener" class="badge-social" aria-label="Instagram del Dr. Gonnet (@drgonnet_mariano)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+      <span>@drgonnet_mariano</span>
+    </a>
   </div>
 </div>
 
