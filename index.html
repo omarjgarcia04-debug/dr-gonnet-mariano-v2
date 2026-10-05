@@ -265,6 +265,22 @@
   .wa-float svg{width:20px;height:20px;flex:none;}
 
   /* ===== RESPONSIVE ===== */
+  @media (min-width:901px){
+    .hero-grid{grid-template-columns:.95fr 1.05fr;gap:56px;}
+    .hero-photo .tag{right:auto;max-width:320px;}
+
+    .esp-grid{grid-template-columns:repeat(2,1fr);}
+    .esp-card{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:26px;align-items:center;padding:28px;}
+    .esp-card .esp-photo{grid-column:1;grid-row:1 / span 2;margin-bottom:0;}
+    .esp-card h3{grid-column:2;align-self:end;}
+    .esp-card p{grid-column:2;align-self:start;}
+
+    .hitos-grid{display:block;column-count:2;column-gap:32px;}
+    .hito{break-inside:avoid;margin-bottom:32px;}
+    .hito-media-row{flex-direction:row;align-items:flex-start;}
+    .hito-media-row > *{flex:var(--r,1) 1 0;min-width:0;width:auto;}
+  }
+
   @media (max-width:900px){
     .hero-grid,.sobre-grid,.ubic-grid,.contacto-grid{grid-template-columns:1fr;}
     .hero-photo{order:-1;}
@@ -465,8 +481,8 @@
       </div>
       <div class="hito">
         <div class="hito-media-row">
-          <img src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/jornadas-tandil-2026.jpg" alt="Profesionales de la salud en las Primeras Jornadas Tandilenses de Columna">
-          <img src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/jornadas-tandil-2026-ponentes.jpg" alt="Dr. Gonnet junto a los disertantes de las Primeras Jornadas Tandilenses de Columna">
+          <img style="--r:.75" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/jornadas-tandil-2026.jpg" alt="Profesionales de la salud en las Primeras Jornadas Tandilenses de Columna">
+          <img style="--r:.75" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/jornadas-tandil-2026-ponentes.jpg" alt="Dr. Gonnet junto a los disertantes de las Primeras Jornadas Tandilenses de Columna">
         </div>
         <p class="date">Marzo 2026</p>
         <h3>Primeras Jornadas Tandilenses de Columna</h3>
@@ -479,10 +495,12 @@
         <p>Participó como asistente en el EUCMISS 2026, curso europeo de referencia en cirugía mínimamente invasiva de columna, realizado en Madrid (18 y 19 de junio de 2026), con acreditación de 13 créditos europeos CME otorgados por la EACCME y aval de la Sociedad Española de Neurocirugía (SENEC).</p>
       </div>
       <div class="hito">
-        <div class="hito-photo"><img src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/congreso-columna-2026.jpg" alt="Credencial del Dr. Gonnet en el 27º Congreso Argentino de Columna"></div>
+        <div class="hito-media-row">
+          <img style="--r:.75" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/congreso-columna-2026.jpg" alt="Credencial del Dr. Gonnet en el 27º Congreso Argentino de Columna">
+          <video style="--r:.5625;aspect-ratio:9/16" src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/videos/congreso-columna-2026.mp4" poster="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/congreso-columna-2026.jpg" muted loop playsinline autoplay controls></video>
+        </div>
         <div class="hito-media-row">
           <img src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/congreso-columna-selfie.jpg" alt="Dr. Gonnet junto a un colega en el 27º Congreso Argentino de Columna">
-          <video src="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/videos/congreso-columna-2026.mp4" poster="https://cdn.jsdelivr.net/gh/omarjgarcia04-debug/dr-gonnet-mariano-v2@main/images/congreso-columna-2026.jpg" muted loop playsinline autoplay controls></video>
         </div>
         <p class="date">Agosto 2026</p>
         <h3>27º Congreso Argentino de Columna — 50º aniversario de la SAPCV</h3>
